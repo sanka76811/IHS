@@ -1,0 +1,30 @@
+.back{
+	height: 100vh;
+	background-image:url(../images/15.jpg);
+	background-size: cover;
+	overflow-x: hidden;
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+.page-wrapper{
+	margin-bottom: 100px;
+}
+
+.main-footer {
+	position: fixed;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.popover-content{
+	width: 150px;
+	text-align: left;
+    margin-top: 10px;
+}
+
+
+.popover{
+	background-color: #2b2b2b;
+}
