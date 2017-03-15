@@ -50,15 +50,15 @@
 <script>
         $(document).ready(function(){
             $('[data-toggle="popover"]').popover({html:true});
-            setFotter();
+            setFooter();
         });
 
 
         $(window).resize(function(){
-            setFotter();    
+            setFooter();    
         });
 
-        function setFotter(){
+        function setFooter(){
             if($('.page-wrapper').height() < $(window).height()){
                 $('.page-wrapper').addClass("full-height");
                 $('.main-footer').addClass("absolute");
