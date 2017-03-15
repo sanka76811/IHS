@@ -48,7 +48,8 @@
                         <!--Top Right-->
                         <div class="top-right">
                             <ul class="top-nav clearfix">
-                                <li><a href="#" role="button" class="btn popovers" data-toggle="popover" data-trigger="focus" data-content="<p><a href='signIn.php'>Sign In</a></p><p><a href='signup.php'>Sign Up</a></p>" data-placement="bottom" >Start Now!</a></li>
+                                <li><a href="signIn.php" style="margin-top: 7px;">Sign In</a></li>
+                                <li><a href="signup.php" style="margin-top: 7px;">Sign Up</a></li>
                                 <li><a href="#" style="margin-top: 7px;">Privacy</a></li>
                                 <li><a href="#" style="margin-top: 7px;">Support</a></li>
                             </ul>

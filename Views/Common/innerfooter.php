@@ -49,6 +49,23 @@
 
 <script>
         $(document).ready(function(){
-            $('[data-toggle="popover"]').popover({html:true}); 
+            $('[data-toggle="popover"]').popover({html:true});
+            setFotter();
         });
+
+
+        $(window).resize(function(){
+            setFotter();    
+        });
+
+        function setFotter(){
+            if($('.page-wrapper').height() < $(window).height()){
+                $('.page-wrapper').addClass("full-height");
+                $('.main-footer').addClass("absolute");
+            }
+            else{
+                $('.page-wrapper').removeClass("full-height");
+                $('.main-footer').removeClass("absolute");
+            }
+        }
 </script>

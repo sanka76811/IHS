@@ -17,6 +17,10 @@
                 </div>
             </div>
          </div>
+
+    </footer>
+    
+</div>
 <!--End pagewrapper-->
 
 <!--Scroll to top-->
