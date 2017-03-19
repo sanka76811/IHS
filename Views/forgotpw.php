@@ -11,14 +11,13 @@ include 'Common/innerheader.php';
         <hr>
 
         	  <div class="default-form">
-                            <form method="post">
+                            <form method="post" id="forgotpw">
                                 <div class="row clearfix">
 
                                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                         <div class="group-inner">
                                         <p style="color:#38ab14;">Enter your username or email address, and we'll send you a link so you can reset your password.</p>
-                                        <label>User name / E-mail Address</label>
-                                            <input type="text" name="email" value="" placeholder="Enter User name or Email Address" required>
+                                            <input type="email" name="emailfp" id="emailfp" value="" placeholder="Email Address *" required>
                                         </div>
 
 
@@ -27,7 +26,7 @@ include 'Common/innerheader.php';
 
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                         <div class="group-inner">
-                                        <button type="button" class="btn btn-success btn-lg btn-block">SEND</button>
+                                        <button type="submit" class="btn btn-success btn-lg btn-block">SEND</button>
                                         </div>
                                         </div>
 
@@ -53,3 +52,10 @@ include 'Common/innerheader.php';
         <?php
 include 'Common/innerfooter.php';
 ?>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $("#forgotpw").validate();
+    });
+</script>

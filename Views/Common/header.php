@@ -41,7 +41,7 @@
                             <a href="#"><span class="fa fa-google-plus"></span></a>
                             <a href="#"><span class="fa fa-linkedin"></span></a>
                         </div>
-                        <div class="text">Have any question? <a href="contact.html">Call Us Now!!</a></div>
+                        
                     </div>
                     
                     <!--Top Right-->

@@ -42,13 +42,13 @@
                             <a href="#"><span class="fa fa-google-plus"></span></a>
                             <a href="#"><span class="fa fa-linkedin"></span></a>
                         </div>
-                        <div class="text">Have any question? <a href="contact.html">Call Us Now!!</a></div>
+                     
                     </div>
                     
                     <!--Top Right-->
                     <div class="top-right">
                         <ul class="top-nav clearfix">
-                            <li><a href="signIn.php" style="margin-top: 7px;">Sign In</a></li>
+                        	<li><a href="signIn.php" style="margin-top: 7px;">Sign In</a></li>
                             <li><a href="signup.php" style="margin-top: 7px;">Sign Up</a></li>
                             <li><a href="#" style="margin-top: 7px;">Privacy</a></li>
                             <li><a href="#" style="margin-top: 7px;">Support</a></li>
