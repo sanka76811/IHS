@@ -28,8 +28,13 @@
 
 <script src="/IHS/Res/js/jquery.min.js"></script> 
 <script src="/IHS/Res/js/jquery.js"></script> 
+<script src="/IHS/Res/js/jquery.validate"></script> 
 <script src="/IHS/Res/js/bootstrap.min.js"></script>
 <script src="/IHS/Res/js/revolution.min.js"></script>
+<script src="/IHS/Res/js/jquery.validate.min.js"></script>
+<script src="/IHS/Res/js/additional-methods.min.js"></script>
+<script src="/IHS/Res/js/jquery-ui.js"></script> 
+<script type="text/javascript" src="/IHS/Res/js/jquery.numeric.js"></script>
 <script src="/IHS/Res/js/jquery.fancybox.pack.js"></script>
 <script src="/IHS/Res/js/jquery.fancybox-media.js"></script>
 <script src="/IHS/Res/js/owl.js"></script>
@@ -47,6 +52,6 @@
 
 <script>
         $(document).ready(function(){
-            $('[data-toggle="popover"]').popover({html:true}); 
+            $("#signinform").validate();
         });
 </script>
