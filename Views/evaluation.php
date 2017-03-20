@@ -238,37 +238,37 @@ include 'Common/innerheader.php';
 	                        <div class="col-md-10">
 	                        	<div class="group-inner col-md-6">
 	                        		<label class="checkbox-inline rad" style="padding: 0">
-                                         <input type="radio" name="education" id="education1" value="option1" style="width:auto;height: auto;">10 years school or O/L
+                                         <input type="radio" name="education" id="education1" value="10yrs" style="width:auto;height: auto;">10 years school or O/L
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-md-6">
 	                        		<label class="checkbox-inline rad" style="padding: 0">
-                                         <input type="radio" name="education" id="education2" value="option1" style="width:auto;height: auto;">12 years school or A/L 
+                                         <input type="radio" name="education" id="education2" value="12yrs" style="width:auto;height: auto;">12 years school or A/L 
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-md-6">
 	                        		<label class="checkbox-inline rad" style="padding: 0">
-                                         <input type="radio" name="education" id="education3" value="option1" style="width:auto;height: auto;">14 years education or Diploma 
+                                         <input type="radio" name="education" id="education3" value="14yrs" style="width:auto;height: auto;">14 years education or Diploma 
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-md-6">
 	                        		<label class="checkbox-inline rad" style="padding: 0">
-                                         <input type="radio" name="education" id="education4" value="option1" style="width:auto;height: auto;">Degree
+                                         <input type="radio" name="education" id="education4" value="Degree" style="width:auto;height: auto;">Degree
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-md-6">
 	                        		<label class="checkbox-inline rad" style="padding: 0">
-                                         <input type="radio" name="education" id="education5" value="option1" style="width:auto;height: auto;">Master/MSc 
+                                         <input type="radio" name="education" id="education5" value="Master" style="width:auto;height: auto;">Master/MSc 
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-md-6">
 	                        		<label class="checkbox-inline rad" style="padding: 0">
-                                         <input type="radio" name="education" id="education6" value="option1" style="width:auto;height: auto;">PHD
+                                         <input type="radio" name="education" id="education6" value="PHD" style="width:auto;height: auto;">PHD
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-md-6">
 	                        		<label class="checkbox-inline rad" style="padding: 0">
-                                         <input type="radio" name="education" id="education7" value="option1" style="width:auto;height: auto;">Other  
+                                         <input type="radio" name="education" id="education7" value="Other" style="width:auto;height: auto;">Other  
                                     </label>
 	                        	</div>
 	                        </div>
@@ -285,8 +285,14 @@ include 'Common/innerheader.php';
                             <div class="group-inner" >
                             	<label><h4>6. Number of years of work experience ?</h4></label>
                             </div>
-                            <div class="group-inner col-md-6">
-                                <input type="text"  value="" placeholder="Occupation *" required>
+                            <div class="group-inner col-md-4">
+                                <input type="text"  value="" placeholder="Years" required>
+                            </div>
+                            <div class="group-inner col-md-6" id="degree">
+                            	<label class="col-xs-6">No of years after degree </label>
+                            	<div class="col-xs-6">
+                                	<input type="text"  value="" placeholder="Years" required>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
@@ -345,7 +351,7 @@ include 'Common/innerheader.php';
 	                    </div>
 	                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
                             <div class="group-inner" >
-                            	<label><h4>9. how much you can spend for your immigration work </h4></label>
+                            	<label><h4>9. How much you can spend for your immigration work </h4></label>
                             </div>
                             <div class="group-inner col-md-6">
                                 <input type="text"  value="" placeholder="Rs *" required>
@@ -373,7 +379,7 @@ include 'Common/innerheader.php';
                             	<label><h4>11. Any family members in your chosen  countries who will be happy to help you ?</h4></label>
                             </div>
                             <div id="relations">
-	                            <div class="group-inner col-sm-4">
+	                            <div class="group-inner col-sm-4" style="margin-bottom: 5px">
 	                                <select id="relationship">
 	                                    <option value="1">Relationship</option>
 	                                    <option value="2">Parents</option>
@@ -385,7 +391,7 @@ include 'Common/innerheader.php';
 	                                    <option value="8">Other</option>
 	                            	</select>
 	                            </div>
-	                            <div class="group-inner col-sm-6">
+	                            <div class="group-inner col-sm-6" style="margin-bottom: 5px">
 	                                <input type="text" id="country" value="" placeholder="Country *" required>
 	                            </div>
 	                        </div>
@@ -465,6 +471,19 @@ include 'Common/innerfooter.php';
             dateFormat: 'dd-mm-yy'
 
    		});
+
+		$("#degree").hide();
+
+		$('input[type=radio][name=education]').change(function() {
+			var val = this.value;
+			if(val == "Degree" || val == "Master" || val == "PHD"){
+				$("#degree").show();
+			}
+			else{
+				$("#degree").hide();
+			}
+			
+		})
 	})
 
 	function Add() {
