@@ -1,231 +1,109 @@
 <?php
 include 'Common/innerheader.php';
 ?>
+
+<style>
+  #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #sortable li { margin: 0 5px 5px 5px; padding: 5px;color: #777777;}
+
+  #num  li { margin: 0 5px 5px 5px;color: white;background-color: rgba(255, 132, 50, 0.78);width: 60%;
+    text-align: center;height: 39px;}
+  </style>
+
+
+ 
+
 <div class="container"  style="margin-top: 100px; margin-bottom: 20px;">
     <div class="row">
 		<div class="col-md-12">
 	        <div class="default-form">
-	            <form method="post">
+	            <form method="post" id="evaluationform">
 	                <div class="row clearfix">
 	                <h3 style="text-align: center;">Evaluation Form</h3>
 	                <hr>
 
 	                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
 	                        <div class="group-inner">
-	                            <label><h4>1. Which countries you like to go (Put numbers according to your preference)</h4></label> 
+	                            <label class="questions">1. Country preference order : (Drag and change the country order according to your preference)</label> 
 	                        </div>
-	                        <div class="col-md-6">
-	                        	<table class="table table-borderless">
-	                        		<tr>
-	                        			<td>
-	                        				<label class="text-label">Australia</label>
-	                        			</td>
-	                        			<td>
-	                        				<select class="text-value">
-		                                        <option value="1">1</option>
-		                                        <option value="2">2</option>
-		                                        <option value="3">3</option>
-		                                        <option value="4">4</option>
-		                                        <option value="5">5</option>
-		                                        <option value="6">6</option>
-		                                        <option value="7">7</option>
-		                                        <option value="8">8</option>
-		                                        <option value="9">9</option>
-			                            	</select>
-	                        			</td>
-	                        		</tr>
-	                        		<tr>
-	                        			<td>
-	                        				<label class="text-label">Canada</label>
-	                        			</td>
-	                        			<td>
-	                        				<select class="text-value">
-		                                        <option value="1">1</option>
-		                                        <option value="2">2</option>
-		                                        <option value="3">3</option>
-		                                        <option value="4">4</option>
-		                                        <option value="5">5</option>
-		                                        <option value="6">6</option>
-		                                        <option value="7">7</option>
-		                                        <option value="8">8</option>
-		                                        <option value="9">9</option>
-			                            	</select>
-	                        			</td>
-	                        		</tr>
-	                        		<tr>
-	                        			<td>
-	                        				<label class="text-label">New Zealand</label>
-	                        			</td>
-	                        			<td>
-	                        				<select class="text-value">
-		                                        <option value="1">1</option>
-		                                        <option value="2">2</option>
-		                                        <option value="3">3</option>
-		                                        <option value="4">4</option>
-		                                        <option value="5">5</option>
-		                                        <option value="6">6</option>
-		                                        <option value="7">7</option>
-		                                        <option value="8">8</option>
-		                                        <option value="9">9</option>
-			                            	</select>
-	                        			</td>
-	                        		</tr>
-	                        		<tr>
-	                        			<td>
-	                        				<label class="text-label">United Kingdom</label>
-	                        			</td>
-	                        			<td>
-	                        				<select class="text-value">
-		                                        <option value="1">1</option>
-		                                        <option value="2">2</option>
-		                                        <option value="3">3</option>
-		                                        <option value="4">4</option>
-		                                        <option value="5">5</option>
-		                                        <option value="6">6</option>
-		                                        <option value="7">7</option>
-		                                        <option value="8">8</option>
-		                                        <option value="9">9</option>
-			                            	</select>
-	                        			</td>
-	                        		</tr>
-	                        		<tr>
-	                        			<td>
-	                        				<label class="text-label">USA</label>
-	                        			</td>
-	                        			<td>
-	                        				<select class="text-value">
-		                                        <option value="1">1</option>
-		                                        <option value="2">2</option>
-		                                        <option value="3">3</option>
-		                                        <option value="4">4</option>
-		                                        <option value="5">5</option>
-		                                        <option value="6">6</option>
-		                                        <option value="7">7</option>
-		                                        <option value="8">8</option>
-		                                        <option value="9">9</option>
-			                            	</select>
-	                        			</td>
-	                        		</tr>
-	                        		<tr>
-	                        			<td>
-	                        				<label class="text-label">Other European countries</label>
-	                        			</td>
-	                        			<td>
-	                        				<select class="text-value">
-		                                        <option value="1">1</option>
-		                                        <option value="2">2</option>
-		                                        <option value="3">3</option>
-		                                        <option value="4">4</option>
-		                                        <option value="5">5</option>
-		                                        <option value="6">6</option>
-		                                        <option value="7">7</option>
-		                                        <option value="8">8</option>
-		                                        <option value="9">9</option>
-			                            	</select>
-	                        			</td>
-	                        		</tr>
-	                        		<tr>
-	                        			<td>
-	                        				<label class="text-label">Dubai and other Middle East at countries</label>
-	                        			</td>
-	                        			<td>
-	                        				<select class="text-value">
-		                                        <option value="1">1</option>
-		                                        <option value="2">2</option>
-		                                        <option value="3">3</option>
-		                                        <option value="4">4</option>
-		                                        <option value="5">5</option>
-		                                        <option value="6">6</option>
-		                                        <option value="7">7</option>
-		                                        <option value="8">8</option>
-		                                        <option value="9">9</option>
-			                            	</select>
-	                        			</td>
-	                        		</tr>
-	                        		<tr>
-	                        			<td>
-	                        				<label class="text-label">No Preference</label>
-	                        			</td>
-	                        			<td>
-	                        				<select class="text-value">
-		                                        <option value="1">1</option>
-		                                        <option value="2">2</option>
-		                                        <option value="3">3</option>
-		                                        <option value="4">4</option>
-		                                        <option value="5">5</option>
-		                                        <option value="6">6</option>
-		                                        <option value="7">7</option>
-		                                        <option value="8">8</option>
-		                                        <option value="9">9</option>
-			                            	</select>
-	                        			</td>
-	                        		</tr>
-	                        		<tr>
-	                        			<td>
-	                        				<label class="text-label">Other</label>
-	                        			</td>
-	                        			<td>
-	                        				<select class="text-value">
-		                                        <option value="1">1</option>
-		                                        <option value="2">2</option>
-		                                        <option value="3">3</option>
-		                                        <option value="4">4</option>
-		                                        <option value="5">5</option>
-		                                        <option value="6">6</option>
-		                                        <option value="7">7</option>
-		                                        <option value="8">8</option>
-		                                        <option value="9">9</option>
-			                            	</select>
-	                        			</td>
-	                        		</tr>
-	                        	</table>
+
+	                        <div class="col-md-1 col-sm-3 col-xs-3" style="margin-left: 20px;">
+	                        <ul class="rad" id="num">
+	                        	<li>1</li>
+	                        	<li>2</li>
+	                        	<li>3</li>
+	                        	<li>4</li>
+	                        	<li>5</li>
+	                        	<li>6</li>
+	                        	<li>7</li>
+	                        	<li>8</li>
+	                        </ul>
+	                        </div>
+	                        <div class="col-md-8 col-sm-9 col-xs-9">
+
+										<ul id="sortable">
+										  <li class="ui-state-default">Australia</li>
+										  <li class="ui-state-default">Canada</li>
+										  <li class="ui-state-default">New Zealand</li>
+										  <li class="ui-state-default">United Kingdom </li>
+										  <li class="ui-state-default">Other European countries</li>
+										  <li class="ui-state-default">Dubai and other middle east at countries </li>
+										  <li class="ui-state-default">Other</li>
+										  <li class="ui-state-default">No Preference</li>
+										</ul>
 	                        </div>
 	                    </div>
 	                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
 	                        <div class="group-inner">
-	                            <label><h4>2. Why you want to go to another country</h4></label> 
+	                            <label class="questions">2. Why do you migrate?</label> 
 	                        </div>
-	                        <div class="col-md-10">
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+
+	                        <div class="col-md-12">
+	                        
+	                        	<div class="group-inner col-md-3">
+	                        		<label class="checkbox-inline" style="padding: 0">
+	             
                                          <input type="radio" name="reason" id="reason1" value="option1" style="width:auto;height: auto;">Live permanently
                                     </label>
+
+
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        	<div class="group-inner col-md-3">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="reason" id="reason2" value="option1" style="width:auto;height: auto;">Finding a better job 
                                     </label>
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        	<div class="group-inner col-md-3">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="reason" id="reason3" value="option1" style="width:auto;height: auto;">Further study 
                                     </label>
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        	<div class="group-inner col-md-3">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="reason" id="reason4" value="option1" style="width:auto;height: auto;">Medical treatment 
                                     </label>
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        	<div class="group-inner col-md-3">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="reason" id="reason6" value="option1" style="width:auto;height: auto;">Children's education 
                                     </label>
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        	<div class="group-inner col-md-3">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="reason" id="reason7" value="option1" style="width:auto;height: auto;">Joint family
                                     </label>
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        	<div class="group-inner col-md-3">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="reason" id="reason8" value="option1" style="width:auto;height: auto;">Visitor , Tourist  
                                     </label>
 	                        	</div>
+	                        
 	                        </div>
 	                    </div>
 	                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
                             <div class="group-inner">
-                             	<label><h4>3. Birthday</h4></label>   
+                             	<label class="questions">3. Birthday :</label>   
                             </div>
                             <div class="group-inner col-sm-6">
                             	<input type="text" name="datepicker"  id="datepicker" value="" placeholder="Birthday *" readonly required>
@@ -233,26 +111,28 @@ include 'Common/innerheader.php';
                         </div>
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
 	                        <div class="group-inner">
-	                            <label><h4>4. Your education qualifications?</h4></label> 
+	                            <label class="questions">4. Education qualifications :</label> 
 	                        </div>
-	                        <div class="col-md-10">
+	                        <div class="col-md-6">
 	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="education" id="education1" value="10yrs" style="width:auto;height: auto;">10 years school or O/L
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="education" id="education2" value="12yrs" style="width:auto;height: auto;">12 years school or A/L 
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="education" id="education3" value="14yrs" style="width:auto;height: auto;">14 years education or Diploma 
                                     </label>
 	                        	</div>
+
+	                        	
 	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="education" id="education4" value="Degree" style="width:auto;height: auto;">Degree
                                     </label>
 	                        	</div>
@@ -262,113 +142,125 @@ include 'Common/innerheader.php';
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="education" id="education6" value="PHD" style="width:auto;height: auto;">PHD
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="education" id="education7" value="Other" style="width:auto;height: auto;">Other  
                                     </label>
 	                        	</div>
 	                        </div>
-	                    </div>
-	                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                            <div class="group-inner" >
-                            	<label><h4>5. What is your occupation ?</h4></label>
+
+
+	                        <div class="group-inner col-md-6" id="degree">
+		                        <div class="group-inner" >
+	                            	<label class="col-xs-6 questions">No of years after degree : </label>
+	                            </div>
+                            	<div class="col-xs-12">
+                                	<input class="numeric" type="text" id="years" value="" placeholder="Years" required>
+                                </div>
                             </div>
-                            <div class="group-inner col-md-6">
+	                    </div>
+
+
+	                    <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                            <div class="group-inner" >
+                            	<label class="questions">5. Current Occupation : </label>
+                            	
+                            </div>
+                            <div class="group-inner  col-md-12">
                                 <input type="text"  value="" placeholder="Occupation *" required>
                             </div>
                         </div>
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+
+
+
+
+                        <div class="form-group col-md-6 col-sm-12 col-xs-12">
                             <div class="group-inner" >
-                            	<label><h4>6. Number of years of work experience ?</h4></label>
+                            	<label class="questions">6. Work experience : </label>
                             </div>
-                            <div class="group-inner col-md-4">
-                                <input type="text"  value="" placeholder="Years" required>
+                            <div class="group-inner col-md-12">
+                                <input class="numeric" type="text" name="workex" id="workex" value="" placeholder="No of Years*" required>
                             </div>
-                            <div class="group-inner col-md-6" id="degree">
-                            	<label class="col-xs-6">No of years after degree </label>
-                            	<div class="col-xs-6">
-                                	<input type="text"  value="" placeholder="Years" required>
-                                </div>
-                            </div>
+                            
                         </div>
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
                             <div class="group-inner" >
-                            	<label><h4>7. Work experience related to your education?</h4></label>
+                            	<label class="questions">7. Is work experience related to your education?</label>
                             </div>
-                            <div class="col-md-10">
+                            <div class="col-md-12">
 	                        	<div class="group-inner col-sm-4">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="experience" id="experience1" value="option1" style="width:auto;height: auto;">Yes
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-sm-4">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="experience" id="experience2" value="option1" style="width:auto;height: auto;">No 
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-sm-4">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
-                                         <input type="radio" name="experience" id="experience3" value="option1" style="width:auto;height: auto;">Not Sure 
+	                        		<label class="checkbox-inline" style="padding: 0">
+                                         <input type="radio" name="experience" id="experience3" value="option1" style="width:auto;height: auto;">May be 
                                     </label>
 	                        	</div>
 	                        </div>
                         </div>
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
 	                        <div class="group-inner">
-	                            <label><h4>8. Your English qualification?</h4></label> 
+	                            <label class="questions">8. English qualifications :</label> 
 	                        </div>
-	                        <div class="col-md-10">
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        <div class="col-md-12">
+	                        	<div class="group-inner col-md-4">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="engqualification" id="engqualification1" value="option1" style="width:auto;height: auto;">Fair but no IELTS or Toefel
                                     </label>
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        	<div class="group-inner col-md-4">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="engqualification" id="engqualification2" value="option1" style="width:auto;height: auto;">Good but no IELTS or Toefel 
                                     </label>
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        	<div class="group-inner col-md-4">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="engqualification" id="engqualification3" value="option1" style="width:auto;height: auto;">Excellent  But no IELTS or Toefel  
                                     </label>
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        	<div class="group-inner col-md-4">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="engqualification" id="engqualification4" value="option1" style="width:auto;height: auto;">IELTS 
                                     </label>
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        	<div class="group-inner col-md-4">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="engqualification" id="engqualification5" value="option1" style="width:auto;height: auto;">Toefel  
                                     </label>
 	                        	</div>
 	                        </div>
 	                    </div>
-	                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+	                    <div class="form-horizontal form-group  col-md-6 col-sm-12 col-xs-12">
                             <div class="group-inner" >
-                            	<label><h4>9. How much you can spend for your immigration work </h4></label>
+                            	<label class="questions">9. How much you can spend for your immigration work?</label>
                             </div>
-                            <div class="group-inner col-md-6">
-                                <input type="text"  value="" placeholder="Rs *" required>
+                            <div class="group-inner col-md-12">
+                                <input class="numeric" type="text"  value="" placeholder="Rs *" required>
                             </div>
                         </div>
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
                             <div class="group-inner" >
-                            	<label><h4>10. Do you want to know about loans or other financial options available ?</h4></label>
+                            	<label class="questions">10. Do you want to know about loans or other financial options available ?</label>
                             </div>
-                            <div class="col-md-10">
+                            <div class="col-md-12">
 	                        	<div class="group-inner col-sm-4">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="loanOption" id="loanOption1" value="yes" style="width:auto;height: auto;">Yes
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-sm-4">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="loanOption" id="loanOption2" value="no" style="width:auto;height: auto;">No 
                                     </label>
 	                        	</div>
@@ -376,11 +268,27 @@ include 'Common/innerheader.php';
                         </div>
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
                             <div class="group-inner" >
-                            	<label><h4>11. Any family members in your chosen  countries who will be happy to help you ?</h4></label>
+                            	<label class="questions">11. Any family members who willing to help you in your chosen  countries?</label>
                             </div>
-                            <div id="relations">
+
+                            <div class="col-md-12">
+	                        	<div class="group-inner col-sm-4">
+	                        		<label class="checkbox-inline" style="padding: 0">
+                                         <input type="radio" name="familyOption" id="familyOption1" value="yes" style="width:auto;height: auto;" required>Yes
+                                    </label>
+	                        	</div>
+	                        	<div class="group-inner col-sm-4">
+	                        		<label class="checkbox-inline" style="padding: 0">
+                                         <input type="radio" name="familyOption" id="familyOption2" value="no" style="width:auto;height: auto;" required>No 
+                                    </label>
+	                        	</div>
+	                        </div>
+
+	                       </div>
+
+                            <div class="group-inner col-md-12" id="relations">
 	                            <div class="group-inner col-sm-4" style="margin-bottom: 5px">
-	                                <select id="relationship">
+	                                <select id="relationship" style="border:1px solid;border-color:#eeeeee;width: 100%;padding:17px;margin-bottom: 20px;">
 	                                    <option value="1">Relationship</option>
 	                                    <option value="2">Parents</option>
 	                                    <option value="3">Children</option>
@@ -392,55 +300,67 @@ include 'Common/innerheader.php';
 	                            	</select>
 	                            </div>
 	                            <div class="group-inner col-sm-6" style="margin-bottom: 5px">
-	                                <input type="text" id="country" value="" placeholder="Country *" required>
+	                                <select id="country" style="border:1px solid;border-color:#eeeeee;width: 100%;padding:17px;margin-bottom: 20px;">
+	                                    <option value="1">Australia</option>
+	                                    <option value="2">Canada</option>
+	                                    <option value="3">New Zealand</option>
+	                                    <option value="4">United Kingdom </option>
+	                                    <option value="5">Other European countries</option>
+	                                    <option value="6">Dubai and other middle east at countries</option>
+	                                    <option value="7">Friends</option>
+	                                
+	                            	</select>
 	                            </div>
+	                            <p><a class="btn btn-warning" onclick="Add();">Add more +</a></p>
+
 	                        </div>
-                            <a onclick="Add();">Add +</a>
-                        </div>
+
+                            
+                       
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
 	                        <div class="group-inner">
-	                            <label><h4>12. When will be the best time for you to travel ?</h4></label> 
+	                            <label class="questions">12.Best time for you to travel :</label> 
 	                        </div>
-	                        <div class="col-md-10">
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
-                                         <input type="radio" name="timetotravel" id="timetotravel1" value="option1" style="width:auto;height: auto;">I want to go as soon as possible
+	                        <div class="col-md-12">
+	                        	<div class="group-inner col-md-4">
+	                        		<label class="checkbox-inline" style="padding: 0">
+                                         <input type="radio" name="timetotravel" id="timetotravel1" value="option1" style="width:auto;height: auto;">As soon as possible
                                     </label>
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
-                                         <input type="radio" name="timetotravel" id="timetotravel2" value="option1" style="width:auto;height: auto;">I will go in 6 month  
+	                        	<div class="group-inner col-md-4">
+	                        		<label class="checkbox-inline" style="padding: 0">
+                                         <input type="radio" name="timetotravel" id="timetotravel2" value="option1" style="width:auto;height: auto;">In 6 month  
                                     </label>
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
-                                         <input type="radio" name="timetotravel" id="timetotravel3" value="option1" style="width:auto;height: auto;">I will go in 1 year  
+	                        	<div class="group-inner col-md-4">
+	                        		<label class="checkbox-inline" style="padding: 0">
+                                         <input type="radio" name="timetotravel" id="timetotravel3" value="option1" style="width:auto;height: auto;">In 1 year  
                                     </label>
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        	<div class="group-inner col-md-4">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="timetotravel" id="timetotravel4" value="option1" style="width:auto;height: auto;">Within 2 years  
                                     </label>
 	                        	</div>
-	                        	<div class="group-inner col-md-6">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
-                                         <input type="radio" name="timetotravel" id="timetotravel5" value="option1" style="width:auto;height: auto;">Let me know when i can go   
+	                        	<div class="group-inner col-md-4">
+	                        		<label class="checkbox-inline" style="padding: 0">
+                                         <input type="radio" name="timetotravel" id="timetotravel5" value="option1" style="width:auto;height: auto;">Let me know when can I go   
                                     </label>
 	                        	</div>
 	                        </div>
 	                    </div>
 	                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
                             <div class="group-inner" >
-                            	<label><h4>13. Do you have a disability (If you have you may be eligible for our" special peoples help" scheme)</h4></label>
+                            	<label class="questions">13. Do you have a disability (If you have you may be eligible for our" special peoples help" scheme)</label>
                             </div>
-                            <div class="col-md-10">
+                            <div class="col-md-12">
 	                        	<div class="group-inner col-sm-4">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="disabilityOptions" id="disabilityOption1" value="yes" style="width:auto;height: auto;">Yes
                                     </label>
 	                        	</div>
 	                        	<div class="group-inner col-sm-4">
-	                        		<label class="checkbox-inline rad" style="padding: 0">
+	                        		<label class="checkbox-inline" style="padding: 0">
                                          <input type="radio" name="disabilityOptions" id="disabilityOption2" value="no" style="width:auto;height: auto;">No 
                                     </label>
 	                        	</div>
@@ -483,11 +403,33 @@ include 'Common/innerfooter.php';
 				$("#degree").hide();
 			}
 			
-		})
-	})
+		});
+
+		$("#relations").hide();
+		$('input[type=radio][name=familyOption]').change(function() {
+			var val2 = this.value;
+			if(val2 == "yes"){
+				$("#relations").show();
+			}
+			else{
+				$("#relations").hide();
+			}
+			
+		});
+
+
+		$("input.numeric").numeric()
+
+		$( "#sortable" ).sortable({
+      placeholder: "ui-state-highlight"
+    });
+    $( "#sortable" ).disableSelection();
+   
+	});
 
 	function Add() {
-		var element = '<div class="group-inner col-sm-4"><select id="relationship"><option value="1">Relationship</option><option value="2">Parents</option><option value="3">Children</option><option value="4">Spouse</option><option value="5">Brothers and Sisters</option><option value="6">First cousins</option><option value="7">Friends</option><option value="8">Other</option></select></div><div class="group-inner col-sm-6"><input type="text" id="country" value="" placeholder="Country *" required></div>';
+		var element = '<div class="group-inner col-sm-4"><select id="relationship" style="border:1px solid;border-color:#eeeeee;width: 100%;padding:17px;margin-bottom: 20px;"><option value="1">Relationship</option><option value="2">Parents</option><option value="3">Children</option><option value="4">Spouse</option><option value="5">Brothers and Sisters</option><option value="6">First cousins</option><option value="7">Friends</option><option value="8">Other</option></select></div><div class="group-inner col-sm-6" style="margin-bottom: 5px"><select id="country" style="border:1px solid;border-color:#eeeeee;width: 100%;padding:17px;margin-bottom: 20px;"><option value="1">Australia</option><option value="2">Canada</option><option value="3">New Zealand</option><option value="4">United Kingdom </option><option value="5">Other European countries</option><option value="6">Dubai and other middle east at countries</option><option value="7">Friends</option></select></div>';
+
 		$('#relations').append(element);
 		
 	}

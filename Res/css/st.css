@@ -80,6 +80,20 @@ input[type="radio" i] {
     margin: 2px;
 }
 
-.rad{
-	font-weight: 700;
+
+
+.preference{
+	background-color: rgba(255, 132, 50, 0.78);
+    width: 60%;
+    text-align: center;
+    color: white;
 }
+
+
+.questions{
+	font-size: 17px !important;
+}
+
+
+
+

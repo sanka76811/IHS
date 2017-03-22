@@ -104,7 +104,7 @@ include 'Common/innerheader.php';
 
                                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                         <div class="group-inner">
-                                        <select style="border:1px solid;border-color:#eeeeee;width: 100%;padding:15px;margin-bottom: 20px;">
+                                        <select style="border:1px solid;border-color:#eeeeee;width: 100%;padding:15px;margin-bottom: 20px;" required>
                                                 <option value="">Select Location</option>
                                                 <option value="AF">Afghanistan</option>
                                                 <option value="AX">Åland Islands</option>
