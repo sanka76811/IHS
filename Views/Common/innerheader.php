@@ -77,18 +77,7 @@
                         
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li class="current dropdown"><a href="#">Home</a>
-                                    <ul>
-                                        <li><a href="index.html">Homepage One</a></li>
-                                        <li><a href="index-2.html">Homepage Two</a></li>
-                                        <li class="dropdown"><a href="#">Header Styles</a>
-                                        	<ul>
-                                        		<li><a href="index.html">Header Style One</a></li>
-												<li><a href="index-2.html">Header Style Two</a></li>
-											</ul>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <li><a href="/IHS/Views/index.php">Home</a></li>
                                 <li class="dropdown"><a href="#">About Us</a>
                                 	<ul>
                                     	<li><a href="about-us.html">About Us</a></li>
@@ -117,7 +106,7 @@
                     </nav><!-- Main Menu End-->
                     
                     <!--Outer Button-->
-                    <div class="outer-btn"><a href="contact.html" class="theme-btn consultation">UPLOAD YOUR CV</a></div>
+                    <div class="outer-btn"><a href="/IHS/Views/evaluation.php" class="theme-btn consultation">Evaluation Form</a></div>
                     
                 </div>
             </div>
@@ -147,18 +136,7 @@
                         
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li class="current dropdown"><a href="#">Home</a>
-                                    <ul>
-                                        <li><a href="index.html">Homepage One</a></li>
-                                        <li><a href="index-2.html">Homepage Two</a></li>
-                                        <li class="dropdown"><a href="#">Header Styles</a>
-                                        	<ul>
-                                        		<li><a href="index.html">Header Style One</a></li>
-												<li><a href="index-2.html">Header Style Two</a></li>
-											</ul>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <li><a href="#">Home</a></li>
                                 <li class="dropdown"><a href="#">About Us</a>
                                 	<ul>
                                     	<li><a href="about-us.html">About Us</a></li>

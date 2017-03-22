@@ -1,12 +1,12 @@
 .main-header .header-top .top-right .top-nav li {
-	margin-left: 5px;
+	margin-left: 0px;
 	
 
 }
 
 .main-header .header-top .top-right .top-nav li a {
-	padding-left: 5px;
-	padding-right: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
 	border-left:1px solid #ff7f17;
 }
 
