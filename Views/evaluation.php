@@ -22,38 +22,172 @@ include 'Common/innerheader.php';
 	                <h3 style="text-align: center;">Evaluation Form</h3>
 	                <hr>
 
-	                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+	                    <div class=" form-horizontal form-group col-md-12 col-sm-12 col-xs-12">
+	                    
 	                        <div class="group-inner">
-	                            <label class="questions">1. Country preference order : (Drag and change the country order according to your preference)</label> 
+	                            <label class="questions">1. Country preference order :</label> 
 	                        </div>
+	                        <div class="col-md-12" style="padding:5px 30px;">
+		                        <div class="checkb">
+	  								<label><input type="checkbox" value="no" name="nopreference" id="nopreference" onchange="myprference(this);">No prefrence</label>
+								</div>
+							</div>
+						</div>
 
-	                        <div class="col-md-1 col-sm-3 col-xs-3" style="margin-left: 20px;">
-	                        <ul class="rad" id="num">
-	                        	<li>1</li>
-	                        	<li>2</li>
-	                        	<li>3</li>
-	                        	<li>4</li>
-	                        	<li>5</li>
-	                        	<li>6</li>
-	                        	<li>7</li>
-	                        	<li>8</li>
-	                        </ul>
-	                        </div>
-	                        <div class="col-md-8 col-sm-9 col-xs-9">
+						<div class=" form-horizontal form-group col-md-12 col-sm-12 col-xs-12" id="countrypreference">
 
-										<ul id="sortable">
-										  <li class="ui-state-default">Australia</li>
-										  <li class="ui-state-default">Canada</li>
-										  <li class="ui-state-default">New Zealand</li>
-										  <li class="ui-state-default">United Kingdom </li>
-										  <li class="ui-state-default">Other European countries</li>
-										  <li class="ui-state-default">Dubai and other middle east at countries </li>
-										  <li class="ui-state-default">Other</li>
-										  <li class="ui-state-default">No Preference</li>
-										</ul>
-	                        </div>
+	                        <div class="col-md-12" style="margin-bottom: -12px;">
+	                         <label class="col-sm-4 preference">Australia</label>
+		                        <div class="group-inner col-md-2">	                                
+		                        		<select id="country" style="border:1px solid;border-color:#eeeeee;width: 100%;padding:7px;margin-bottom: 20px;width:100% ">
+		                                    <option value="">Select Order</option>
+		                                    <option value="1">1</option>
+		                                    <option value="2">2</option>
+		                                    <option value="3">3 </option>
+		                                    <option value="4">4</option>
+		                                    <option value="5">5</option>
+		                                    <option value="6">6</option>
+		                                    <option value="5">7</option>
+		                                    <option value="6">8</option>
+		                                
+		                            	</select>
+		                        </div>
+		                    </div>
+
+		                     <div class="col-md-12" style="margin-bottom: -12px;">
+		                        <label class="col-sm-4 preference">Canada</label>
+		                        <div class="group-inner col-md-2">	                                
+		                        		<select id="country" style="border:1px solid;border-color:#eeeeee;width: 100%;padding:7px;margin-bottom: 20px;">
+		                                    <option value="">Select Order</option>
+		                                    <option value="1">1</option>
+		                                    <option value="2">2</option>
+		                                    <option value="3">3 </option>
+		                                    <option value="4">4</option>
+		                                    <option value="5">5</option>
+		                                    <option value="6">6</option>
+		                                    <option value="5">7</option>
+		                                    <option value="6">8</option>
+		                                
+		                            	</select>
+		                        </div>
+		                     </div>
+
+		                     <div class="col-md-12" style="margin-bottom: -12px;">
+		                        <label class="col-sm-4 preference">New Zealand</label>
+		                        <div class="group-inner col-md-2">	                                
+		                        		<select id="country" style="border:1px solid;border-color:#eeeeee;width: 100%;padding:7px;margin-bottom: 20px;">
+		                                    <option value="">Select Order</option>
+		                                    <option value="1">1</option>
+		                                    <option value="2">2</option>
+		                                    <option value="3">3 </option>
+		                                    <option value="4">4</option>
+		                                    <option value="5">5</option>
+		                                    <option value="6">6</option>
+		                                    <option value="5">7</option>
+		                                    <option value="6">8</option>
+		                                
+		                            	</select>
+		                        </div>
+		                     </div>
+
+		                     <div class="col-md-12" style="margin-bottom: -12px;">
+		                        <label class="col-sm-4 preference">United Kingdom</label>
+		                        <div class="group-inner col-md-2">	                                
+		                        		<select id="country" style="border:1px solid;border-color:#eeeeee;width: 100%;padding:7px;margin-bottom: 20px;">
+		                                    <option value="">Select Order</option>
+		                                    <option value="1">1</option>
+		                                    <option value="2">2</option>
+		                                    <option value="3">3 </option>
+		                                    <option value="4">4</option>
+		                                    <option value="5">5</option>
+		                                    <option value="6">6</option>
+		                                    <option value="5">7</option>
+		                                    <option value="6">8</option>
+		                                
+		                            	</select>
+		                        </div>
+		                     </div>
+
+		                     <div class="col-md-12" style="margin-bottom: -12px;">
+		                        <label class="col-sm-4 preference">USA</label>
+		                        <div class="group-inner col-md-2">	                                
+		                        		<select id="country" style="border:1px solid;border-color:#eeeeee;width: 100%;padding:7px;margin-bottom: 20px;">
+		                                    <option value="">Select Order</option>
+		                                    <option value="1">1</option>
+		                                    <option value="2">2</option>
+		                                    <option value="3">3 </option>
+		                                    <option value="4">4</option>
+		                                    <option value="5">5</option>
+		                                    <option value="6">6</option>
+		                                    <option value="5">7</option>
+		                                    <option value="6">8</option>
+		                                
+		                            	</select>
+		                        </div>
+		                     </div>
+
+
+		                     <div class="col-md-12" style="margin-bottom: -12px;">
+		                        <label class="col-sm-4 preference">Other European countries</label>
+		                        <div class="group-inner col-md-2">	                                
+		                        		<select id="country" style="border:1px solid;border-color:#eeeeee;width: 100%;padding:7px;margin-bottom: 20px;">
+		                                    <option value="">Select Order</option>
+		                                    <option value="1">1</option>
+		                                    <option value="2">2</option>
+		                                    <option value="3">3 </option>
+		                                    <option value="4">4</option>
+		                                    <option value="5">5</option>
+		                                    <option value="6">6</option>
+		                                    <option value="5">7</option>
+		                                    <option value="6">8</option>
+		                                
+		                            	</select>
+		                        </div>
+		                     </div>
+
+		                     
+
+		                     <div class="col-md-12" style="margin-bottom: -12px;">
+		                        <label class="col-sm-4 preference">Dubai and other middle east at countries</label>
+		                        <div class="group-inner col-md-2">	                                
+		                        		<select id="country" style="border:1px solid;border-color:#eeeeee;width: 100%;padding:7px;margin-bottom: 20px;">
+		                                    <option value="">Select Order</option>
+		                                    <option value="1">1</option>
+		                                    <option value="2">2</option>
+		                                    <option value="3">3 </option>
+		                                    <option value="4">4</option>
+		                                    <option value="5">5</option>
+		                                    <option value="6">6</option>
+		                                    <option value="5">7</option>
+		                                    <option value="6">8</option>
+		                                
+		                            	</select>
+		                        </div>
+		                     </div>
+
+		                     <div class="col-md-12" style="margin-bottom: -12px;">
+		                        <label class="col-sm-4 preference">Other</label>
+		                        <div class="group-inner col-md-2">	                                
+		                        		<select id="country" style="border:1px solid;border-color:#eeeeee;width: 100%;padding:7px;margin-bottom: 20px;">
+		                                    <option value="">Select Order</option>
+		                                    <option value="1">1</option>
+		                                    <option value="2">2</option>
+		                                    <option value="3">3 </option>
+		                                    <option value="4">4</option>
+		                                    <option value="5">5</option>
+		                                    <option value="6">6</option>
+		                                    <option value="5">7</option>
+		                                    <option value="6">8</option>
+		                                
+		                            	</select>
+		                        </div>
+		                     </div>
+
+
+
 	                    </div>
-	                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+
+	                    <div class="form-group col-md-12 col-sm-12 col-xs-12 main-div">
 	                        <div class="group-inner">
 	                            <label class="questions">2. Why do you migrate?</label> 
 	                        </div>
@@ -101,15 +235,16 @@ include 'Common/innerheader.php';
 	                        
 	                        </div>
 	                    </div>
-	                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+	                    <div class="form-group col-md-12 col-sm-12 col-xs-12 main-div">
                             <div class="group-inner">
                              	<label class="questions">3. Birthday :</label>   
                             </div>
-                            <div class="group-inner col-sm-6">
-                            	<input type="text" name="datepicker"  id="datepicker" value="" placeholder="Birthday *" readonly required>
+                            <div class="group-inner col-sm-4">
+                            	<input type="text" class="line-gap" name="datepicker"  id="datepicker" value="" placeholder="Birthday *" readonly required>
                             </div>
                         </div>
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+
+                        <div class="form-group col-md-12 col-sm-12 col-xs-12 main-div">
 	                        <div class="group-inner">
 	                            <label class="questions">4. Education qualifications :</label> 
 	                        </div>
@@ -165,30 +300,30 @@ include 'Common/innerheader.php';
 	                    </div>
 
 
-	                    <div class="form-group col-md-6 col-sm-12 col-xs-12">
+	                    <div class="form-group col-md-6 col-sm-12 col-xs-12 main-div">
                             <div class="group-inner" >
                             	<label class="questions">5. Current Occupation : </label>
                             	
                             </div>
                             <div class="group-inner  col-md-12">
-                                <input type="text"  value="" placeholder="Occupation *" required>
+                                <input type="text"  class="line-gap" value="" placeholder="Occupation *" required>
                             </div>
                         </div>
 
 
 
 
-                        <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                        <div class="form-group col-md-6 col-sm-12 col-xs-12 main-div">
                             <div class="group-inner" >
                             	<label class="questions">6. Work experience : </label>
                             </div>
                             <div class="group-inner col-md-12">
-                                <input class="numeric" type="text" name="workex" id="workex" value="" placeholder="No of Years*" required>
+                                <input class="numeric line-gap" type="text" name="workex" id="workex" value="" placeholder="No of Years*" required>
                             </div>
                             
                         </div>
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                            <div class="group-inner" >
+                        <div class="form-group col-md-12 col-sm-12 col-xs-12 main-div">
+                            <div class="group-inners" >
                             	<label class="questions">7. Is work experience related to your education?</label>
                             </div>
                             <div class="col-md-12">
@@ -209,7 +344,7 @@ include 'Common/innerheader.php';
 	                        	</div>
 	                        </div>
                         </div>
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group col-md-12 col-sm-12 col-xs-12 main-div">
 	                        <div class="group-inner">
 	                            <label class="questions">8. English qualifications :</label> 
 	                        </div>
@@ -241,15 +376,15 @@ include 'Common/innerheader.php';
 	                        	</div>
 	                        </div>
 	                    </div>
-	                    <div class="form-horizontal form-group  col-md-6 col-sm-12 col-xs-12">
+	                    <div class="form-horizontal form-group  col-md-6 col-sm-12 col-xs-12 main-div">
                             <div class="group-inner" >
                             	<label class="questions">9. How much you can spend for your immigration work?</label>
                             </div>
-                            <div class="group-inner col-md-12">
-                                <input class="numeric" type="text"  value="" placeholder="Rs *" required>
+                            <div class="group-inner col-md-12 ">
+                                <input class="numeric line-gap" type="text"  value="" placeholder="Rs *" required>
                             </div>
                         </div>
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group col-md-12 col-sm-12 col-xs-12 main-div">
                             <div class="group-inner" >
                             	<label class="questions">10. Do you want to know about loans or other financial options available ?</label>
                             </div>
@@ -266,7 +401,7 @@ include 'Common/innerheader.php';
 	                        	</div>
 	                        </div>
                         </div>
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group col-md-12 col-sm-12 col-xs-12 main-div">
                             <div class="group-inner" >
                             	<label class="questions">11. Any family members who willing to help you in your chosen  countries?</label>
                             </div>
@@ -311,15 +446,15 @@ include 'Common/innerheader.php';
 	                                
 	                            	</select>
 	                            </div>
-	                            <p><a class="btn btn-warning" onclick="Add();">Add more +</a></p>
+	                            <a class="btn btn-warning" onclick="Add();">Add more +</a>
 
 	                        </div>
 
                             
                        
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group col-md-12 col-sm-12 col-xs-12 main-div">
 	                        <div class="group-inner">
-	                            <label class="questions">12.Best time for you to travel :</label> 
+	                            <label class="questions">12. Best time for you to travel :</label> 
 	                        </div>
 	                        <div class="col-md-12">
 	                        	<div class="group-inner col-md-4">
@@ -349,9 +484,9 @@ include 'Common/innerheader.php';
 	                        	</div>
 	                        </div>
 	                    </div>
-	                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+	                    <div class="form-group col-md-12 col-sm-12 col-xs-12 main-div">
                             <div class="group-inner" >
-                            	<label class="questions">13. Do you have a disability (If you have you may be eligible for our" special peoples help" scheme)</label>
+                            	<label class="questions">13. Do you have a disability (If you have you may be eligible for our "special peoples help" scheme) ?</label>
                             </div>
                             <div class="col-md-12">
 	                        	<div class="group-inner col-sm-4">
@@ -417,13 +552,28 @@ include 'Common/innerfooter.php';
 			
 		});
 
+		
 
-		$("input.numeric").numeric()
 
-		$( "#sortable" ).sortable({
-      placeholder: "ui-state-highlight"
-    });
-    $( "#sortable" ).disableSelection();
+	$('#nopreference').on('click', function () {
+    $(this).val(this.checked ? 1 : 0);
+
+	    if(this.value=="1"){
+	    	$("#countrypreference").hide();
+	    }else{
+	    	$("#countrypreference").show();
+	    }
+    
+});
+
+
+
+
+
+		$("input.numeric").numeric();
+
+		
+    
    
 	});
 
