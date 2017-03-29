@@ -35,12 +35,12 @@
             	<div class="clearfix">
                     <!--Top Left-->
                     <div class="top-left">
-                        <div class="social-icon clearfix">
+                        <!--div class="social-icon clearfix">
                         	<a href="#"><span class="fa fa-facebook"></span></a>
                             <a href="#"><span class="fa fa-twitter"></span></a>
                             <a href="#"><span class="fa fa-google-plus"></span></a>
                             <a href="#"><span class="fa fa-linkedin"></span></a>
-                        </div>
+                        </div-->
                         
                     </div>
                     
@@ -49,7 +49,7 @@
                         <ul class="top-nav clearfix">
                         	<li><a href="signIn.php" style="margin-top: 7px;">Sign In</a></li>
                             <li><a href="signup.php" style="margin-top: 7px;">Sign Up</a></li>
-                            <li><a href="#" style="margin-top: 7px;">Privacy</a></li>
+                            <!--li><a href="#" style="margin-top: 7px;">Privacy</a></li-->
                             <li><a href="#" style="margin-top: 7px;">Support</a></li>
                         </ul>
                     </div>
@@ -69,27 +69,27 @@
                     <div class="upper-right clearfix">
                     	
                         <!--Info Box-->
-                        <div class="info-box">
+                        <!--div class="info-box">
                         	<div class="icon-box"><span class="flaticon-telephone"></span></div>
                             <ul>
                             	<li><strong>(+880)1723801729</strong></li>
                                 <li>radiousco@gmail.com</li>
                             </ul>
-                        </div>
+                        </div-->
                         
                         <!--Info Box-->
-                        <div class="info-box">
+                        <!--div class="info-box">
                         	<div class="icon-box"><span class="flaticon-pin"></span></div>
                             <ul>
                             	<li><strong>Dhanmondi Road</strong></li>
                                 <li>Dhaka 1230, BD</li>
                             </ul>
-                        </div>
+                        </div-->
                         
                         <!--Form Box-->
-                        <div class="info-box form-box">
+                        <!--div class="info-box form-box">
 							<form method="post" action="contact.html">
-                                <!--Form Group-->
+                               
                                 <div class="form-group">
                                     <div class="group-inner">
                                         <input type="text" name="username" placeholder="Search Here..." required="">
@@ -97,7 +97,7 @@
                                     </div>
 								</div>
                             </form>
-                        </div>
+                        </div-->
                         
                     </div>
                     
@@ -124,28 +124,28 @@
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
                                 <li><a href="/IHS/Views/index.php">Home</a></li>
-                                <li class="dropdown"><a href="#">About Us</a>
-                                	<ul>
+                                <li><a href="#">About Us</a>
+                                	<!--ul>
                                     	<li><a href="about-us.html">About Us</a></li>
                                     	<li><a href="team.html">Our Team</a></li>
                                         <li><a href="what-we-do.html">What We Do</a></li>
-                                    </ul>
+                                    </ul-->
                                 </li>
                                 
                                 <li><a href="services.html">Services</a></li>
-                                <li class="dropdown"><a href="#">Pages</a>
+                                <!--li class="dropdown"><a href="#">Pages</a>
                                     <ul>
                                     	<li><a href="what-we-do.html">What We Do</a></li>
                                         <li><a href="project.html">Project</a></li>
                                         <li><a href="project-detail.html">Project Detail</a></li>
                                     </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">News</a>
+                                </li-->
+                                <!--li class="dropdown"><a href="#">News</a>
                                     <ul>
                                         <li><a href="blog-list.html">Blog</a></li>
                                         <li><a href="blog-single.html">Blog Details</a></li>
                                     </ul>
-                                </li>
+                                </li-->
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
@@ -183,27 +183,27 @@
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
                                 <li><a href="/IHS/Views/index.php">Home</a></li>
-                                <li class="dropdown"><a href="#">About Us</a>
-                                	<ul>
+                                <li><a href="#">About Us</a>
+                                	<!--ul>
                                     	<li><a href="about-us.html">About Us</a></li>
                                     	<li><a href="team.html">Our Team</a></li>
                                         <li><a href="what-we-do.html">What We Do</a></li>
-                                    </ul>
+                                    </ul-->
                                 </li>
                                 <li><a href="services.html">Services</a></li>
-                                <li class="dropdown"><a href="#">Pages</a>
+                                <!--li class="dropdown"><a href="#">Pages</a>
                                     <ul>
                                     	<li><a href="what-we-do.html">What We Do</a></li>
                                         <li><a href="project.html">Project</a></li>
                                         <li><a href="project-detail.html">Project Detail</a></li>
                                     </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">News</a>
+                                </li-->
+                                <!--li class="dropdown"><a href="#">News</a>
                                     <ul>
                                         <li><a href="blog-list.html">Blog</a></li>
                                         <li><a href="blog-single.html">Blog Details</a></li>
                                     </ul>
-                                </li>
+                                </li-->
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
