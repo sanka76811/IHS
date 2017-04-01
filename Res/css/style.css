@@ -572,7 +572,7 @@ img{
 
 .main-header .header-upper{
 	position:relative;
-	padding:16px 0px;
+	padding:1px 0px;
 	background:#ffffff;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
