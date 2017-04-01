@@ -1,5 +1,5 @@
 <?php
-include 'Common/innerheader.php';
+include '../Common/innerheader.php';
 ?>
 
 <style>
@@ -17,7 +17,7 @@ include 'Common/innerheader.php';
     <div class="row">
 		<div class="col-md-12">
 	        <div class="default-form">
-	            <form method="post" id="evaluationform">
+	            <form method="post" id="evaluationform" action="evaluationConfirm.php">
 	                <div class="row clearfix">
 	                <h3 style="text-align: center;">Evaluation Form</h3>
 	                <hr>
@@ -513,7 +513,7 @@ include 'Common/innerheader.php';
 	</div>
 </div>
 <?php
-include 'Common/innerfooter.php';
+include '../Common/innerfooter.php';
 ?>
 
 <script type="text/javascript">

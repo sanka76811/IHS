@@ -247,6 +247,7 @@ include 'Common/header.php';
     
     
     <!--Counter Section-->
+    <!--
     <section class="counter-section">
     	<div class="auto-container">
         	<div class="row clearfix">
@@ -261,11 +262,11 @@ include 'Common/header.php';
                         <div class="style-text">We have lot of great service that can enough to hlep you</div>
                         <div class="text">Lorem ipsum dolor sit amet, dolor dignis pri. Erant percipit imper diet <br> te. Et eum brute nulla novum admuo us dummy text. </div>
                         
-                        <!--Fact Counter-->
+                        
                         <div class="fact-counter">
                             <div class="row clearfix">
                             
-                                <!--Counter Column-->
+                                
                                 <div class="column col-md-4 col-sm-4 col-xs-12 counter-column wow fadeIn" data-wow-duration="0ms">
                                     <div class="inner">
                                         <div class="count-outer">
@@ -275,7 +276,7 @@ include 'Common/header.php';
                                     </div>
                                 </div>
                                 
-                                <!--Counter Column-->
+                                
                                 <div class="column col-md-4 col-sm-4 col-xs-12 counter-column wow fadeIn" data-wow-duration="0ms">
                                     <div class="inner">
                                         <div class="count-outer">
@@ -285,7 +286,7 @@ include 'Common/header.php';
                                     </div>
                                 </div>
                                 
-                                <!--Counter Column-->
+                                
                                 <div class="column col-md-4 col-sm-4 col-xs-12 counter-column wow fadeIn" data-wow-duration="0ms">
                                     <div class="inner">	
                                         <div class="count-outer">
@@ -305,6 +306,7 @@ include 'Common/header.php';
             </div>
         </div>
     </section>
+    -->
     <!--End Counter Section-->
     
     <!--Fullwidth Section One-->
@@ -374,12 +376,12 @@ include 'Common/header.php';
     <!--End Fullwidth Section One-->
     
     <!--Team Section-->
-    <section class="team-section">
+    <!--section class="team-section">
     	<div class="auto-container">
         	<h2>Our Expert</h2>
             <div class="four-item-carousel">
             
-            	<!--Team Member-->
+            	
                 <div class="team-member">
                     <div class="inner-box">
                         <div class="image-box">
@@ -402,7 +404,7 @@ include 'Common/header.php';
                     </div>
                 </div>
                 
-                <!--Team Member-->
+                
                 <div class="team-member">
                     <div class="inner-box">
                         <div class="image-box">
@@ -425,7 +427,7 @@ include 'Common/header.php';
                     </div>
                 </div>
                 
-                <!--Team Member-->
+                
                 <div class="team-member">
                     <div class="inner-box">
                         <div class="image-box">
@@ -448,7 +450,7 @@ include 'Common/header.php';
                     </div>
                 </div>
                 
-                <!--Team Member-->
+                
                 <div class="team-member">
                     <div class="inner-box">
                         <div class="image-box">
@@ -473,13 +475,14 @@ include 'Common/header.php';
                 
             </div>
         </div>
-    </section>
+    </section-->
     <!--End Experts Section-->
     
     <!--Fullwidth Section Two-->
+    <!--
     <section class="fullwidth-section-two">
     	<div class="outer-box clearfix">
-        	<!--Left Column-->
+        	
         	<div class="left-column clearfix">
             	<div class="content-box clearfix">
                 	<div class="inner-box">
@@ -487,7 +490,7 @@ include 'Common/header.php';
                         <h3>Dont only hear us, But also check our clinet feedabck</h3>
                         <div class="single-item-carousel">
                         
-                        	<!--Testimonial Block-->
+                        	
                             <div class="testimonial-block">
                             	<div class="inner">
                                 	<div class="text">Lorem ipsum dolor sit amet, et ullum epicuri quo. Usu di pertina antiopam amet modera tius fuqe denique medi ocrem voluptau duo eius lorem ut eos lorem amet dolo ipsum sudu. No singulis postulant his, per decore elaboraret sadipscing te. </div>
@@ -499,7 +502,7 @@ include 'Common/header.php';
                                 </div>
                             </div>
                             
-                            <!--Testimonial Block-->
+                            
                             <div class="testimonial-block">
                             	<div class="inner">
                                 	<div class="text">Lorem ipsum dolor sit amet, et ullum epicuri quo. Usu di pertina antiopam amet modera tius fuqe denique medi ocrem voluptau duo eius lorem ut eos lorem amet dolo ipsum sudu. No singulis postulant his, per decore elaboraret sadipscing te. </div>
@@ -511,7 +514,7 @@ include 'Common/header.php';
                                 </div>
                             </div>
                             
-                            <!--Testimonial Block-->
+                            
                             <div class="testimonial-block">
                             	<div class="inner">
                                 	<div class="text">Lorem ipsum dolor sit amet, et ullum epicuri quo. Usu di pertina antiopam amet modera tius fuqe denique medi ocrem voluptau duo eius lorem ut eos lorem amet dolo ipsum sudu. No singulis postulant his, per decore elaboraret sadipscing te. </div>
@@ -528,12 +531,12 @@ include 'Common/header.php';
                 </div>
             </div>
             
-            <!--Right Column-->
+            
             <div class="right-column">
             	<div class="form-outer">
                 	<h2>Request a call back</h2>
                 	<div class="clearfix">
-                    	<!--Default Form-->
+                    	
                     	<div class="default-form">
                             <form method="post">
                                 <div class="row clearfix">
@@ -567,16 +570,18 @@ include 'Common/header.php';
                                 </div>
                             </form>
                     	</div>
-                    	<!--End Default Form-->
+                    	
 					</div>
                 </div>
             </div>
             
         </div>
     </section>
+    -->
     <!--End Fullwidth Section One-->
     
     <!--News Section-->
+    <!--
     <section class="news-section">
     	<div class="auto-container">
         	<div class="title-box">
@@ -588,7 +593,7 @@ include 'Common/header.php';
                 	
                     <div class="two-item-carousel">
                     
-                        <!--News Block-->
+                        
                         <div class="news-block">
                             <div class="inner-box">
                                 <div class="image-box">
@@ -604,7 +609,7 @@ include 'Common/header.php';
                             </div>
                         </div>
                     
-                        <!--News Block-->
+                        
                         <div class="news-block">
                             <div class="inner-box">
                                 <div class="image-box">
@@ -620,7 +625,7 @@ include 'Common/header.php';
                             </div>
                         </div>
                         
-                        <!--News Block-->
+                        
                         <div class="news-block">
                             <div class="inner-box">
                                 <div class="image-box">
@@ -636,7 +641,7 @@ include 'Common/header.php';
                             </div>
                         </div>
                     
-                        <!--News Block-->
+                       
                         <div class="news-block">
                             <div class="inner-box">
                                 <div class="image-box">
@@ -655,10 +660,10 @@ include 'Common/header.php';
                     </div>
                 </div>
                 
-                <!--Right Column-->
+                
                 <div class="right-column col-md-4 col-sm-12 col-xs-12">
                 
-                	<!--News Block Two-->
+                	
                 	<div class="news-block-two">
                     	<div class="inner-box">
                         	<div class="image"><a href="blog-single.html"><img src="/IHS/Res/images/resource/news-thumb-1.jpg" alt="" /></a></div>
@@ -667,7 +672,7 @@ include 'Common/header.php';
                         </div>
                     </div>
                     
-                    <!--News Block Two-->
+                    
                 	<div class="news-block-two">
                     	<div class="inner-box">
                         	<div class="image"><a href="blog-single.html"><img src="/IHS/Res/images/resource/news-thumb-2.jpg" alt="" /></a></div>
@@ -676,7 +681,7 @@ include 'Common/header.php';
                         </div>
                     </div>
                     
-                    <!--News Block Two-->
+                    
                 	<div class="news-block-two">
                     	<div class="inner-box">
                         	<div class="image"><a href="blog-single.html"><img src="/IHS/Res/images/resource/news-thumb-1.jpg" alt="" /></a></div>
@@ -685,7 +690,7 @@ include 'Common/header.php';
                         </div>
                     </div>
                     
-                    <!--News Block Two-->
+                    
                 	<div class="news-block-two">
                     	<div class="inner-box">
                         	<div class="image"><a href="blog-single.html"><img src="/IHS/Res/images/resource/news-thumb-3.jpg" alt="" /></a></div>
@@ -694,7 +699,7 @@ include 'Common/header.php';
                         </div>
                     </div>
                     
-                    <!--News Block Two-->
+                    
                 	<div class="news-block-two">
                     	<div class="inner-box">
                         	<div class="image"><a href="blog-single.html"><img src="/IHS/Res/images/resource/news-thumb-1.jpg" alt="" /></a></div>
@@ -709,6 +714,7 @@ include 'Common/header.php';
             
         </div>
     </section>
+    -->
     <!--End News Section-->
     
     

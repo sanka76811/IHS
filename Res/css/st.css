@@ -132,4 +132,28 @@ input[type=checkbox]
 	margin-top: 5px;
 }
 
+.panel,
+.panel-heading{
+	border-radius: 0px;
+}
 
+.panel-primary{
+	border-color: #1b57b0;
+}
+
+.panel-primary .panel-heading{
+	background-color: #1b57b0;
+	border-color: #1b57b0;
+	text-align: center;
+	color: #fff;
+}
+
+.panel-body{
+	font-weight: 700;
+}
+
+.inform{
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
