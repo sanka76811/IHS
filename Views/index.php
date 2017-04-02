@@ -6,7 +6,7 @@ include 'Common/header.php';
     <section class="main-slider" data-start-height="400" data-slide-overlay="yes">
     	
         <div class="tp-banner-container">
-            <div class="tp-banner reduce">
+            <div class="tp-banner">
                 <ul>
                 	
                     <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="/IHS/Res/images/main-slider/1.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
