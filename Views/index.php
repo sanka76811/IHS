@@ -9,8 +9,8 @@ include 'Common/header.php';
             <div class="tp-banner">
                 <ul>
                 	
-                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="/IHS/Res/images/main-slider/1.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
-                    <img src="/IHS/Res/images/main-slider/1.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="/IHS/Res/images/main-slider/3.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
+                    <img src="/IHS/Res/images/main-slider/3.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
                     
                     <div class="tp-caption sfl sfb tp-resizeme"
                     data-x="left" data-hoffset="15"
@@ -54,8 +54,8 @@ include 'Common/header.php';
                     
                     </li>
                     
-                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="/IHS/Res/images/main-slider/2.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
-                    <img src="/IHS/Res/images/main-slider/2.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="/IHS/Res/images/main-slider/4.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
+                    <img src="/IHS/Res/images/main-slider/4.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
                     
                     <div class="tp-caption sfl sfb tp-resizeme"
                     data-x="left" data-hoffset="15"

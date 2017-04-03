@@ -30,32 +30,7 @@
     <header class="main-header header-style-one">
         
         <!--Header Top-->
-        <div class="header-top">
-        	<div class="auto-container">
-            	<div class="clearfix">
-                    <!--Top Left-->
-                    <div class="top-left">
-                        <!--div class="social-icon clearfix">
-                        	<a href="#"><span class="fa fa-facebook"></span></a>
-                            <a href="#"><span class="fa fa-twitter"></span></a>
-                            <a href="#"><span class="fa fa-google-plus"></span></a>
-                            <a href="#"><span class="fa fa-linkedin"></span></a>
-                        </div-->
-                        
-                    </div>
-                    
-                    <!--Top Right-->
-                    <div class="top-right">
-                        <ul class="top-nav clearfix">
-                        	<li><a href="signIn.php" style="margin-top: 7px;">Sign In</a></li>
-                            <li><a href="signup.php" style="margin-top: 7px;">Sign Up</a></li>
-                            <!--li><a href="#" style="margin-top: 7px;">Privacy</a></li-->
-                            <li><a href="#" style="margin-top: 7px;">Support</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         
     	<!--Header-Upper-->
         <div class="header-upper">
@@ -66,39 +41,14 @@
                     	<div class="logo"><a href="index.php"><img src="/IHS/Res/images/logo.png" alt="Radius" title="Radius"></a></div>
                     </div>
                     
-                    <div class="upper-right clearfix">
-                    	
-                        <!--Info Box-->
-                        <!--div class="info-box">
-                        	<div class="icon-box"><span class="flaticon-telephone"></span></div>
-                            <ul>
-                            	<li><strong>(+880)1723801729</strong></li>
-                                <li>radiousco@gmail.com</li>
-                            </ul>
-                        </div-->
-                        
-                        <!--Info Box-->
-                        <!--div class="info-box">
-                        	<div class="icon-box"><span class="flaticon-pin"></span></div>
-                            <ul>
-                            	<li><strong>Dhanmondi Road</strong></li>
-                                <li>Dhaka 1230, BD</li>
-                            </ul>
-                        </div-->
-                        
-                        <!--Form Box-->
-                        <!--div class="info-box form-box">
-							<form method="post" action="contact.html">
-                               
-                                <div class="form-group">
-                                    <div class="group-inner">
-                                        <input type="text" name="username" placeholder="Search Here..." required="">
-                                        <button type="submit" class="flaticon-search"></button>
-                                    </div>
-								</div>
-                            </form>
-                        </div-->
-                        
+                    <!--Top Right-->
+                    <div class="top-right">
+                        <ul class="top-nav clearfix">
+                            <li><a href="signIn.php" style="margin-top: 7px;">Sign In</a></li>
+                            <li><a href="signup.php" style="margin-top: 7px;">Sign Up</a></li>
+                            <!--li><a href="#" style="margin-top: 7px;">Privacy</a></li-->
+                            <li><a href="#" style="margin-top: 7px;">Support</a></li>
+                        </ul>
                     </div>
                     
                 </div>

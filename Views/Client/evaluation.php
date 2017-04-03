@@ -1,5 +1,5 @@
 <?php
-include '../Common/innerheader.php';
+include '../Common/header.php';
 ?>
 
 <style>

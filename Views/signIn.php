@@ -1,5 +1,5 @@
 <?php
-include 'Common/innerheader.php';
+include 'Common/header.php';
 ?>
 
 <div class="container" style="margin-top: 100px;margin-bottom: 15px;">
