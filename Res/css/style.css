@@ -1277,7 +1277,7 @@ img{
 }
 
 .main-slider .tp-dottedoverlay{
-	background-color:rgba(0,0,0,0.50) !important;	
+	background-color:rgba(0,0,0,0) !important;	
 }
 
 .main-slider .small-title{
@@ -1301,7 +1301,7 @@ img{
 .main-slider .text{
 	font-weight:400;
 	line-height:1.8em;
-	color:#ffffff;
+	color:#000000;
 	font-size:16px;
 }
 
@@ -1960,7 +1960,7 @@ img{
 
 .about-title{
 	position:relative;
-	padding:60px 0px 0px;
+	padding:30px 0px 0px;
 }
 
 .about-title.style-two{
@@ -2469,6 +2469,7 @@ img{
 ***/
 
 .fullwidth-section-one{
+	margin-bottom: 30px;
 	position:relative;
 	background-position:center top;
 	background-repeat:no-repeat;
