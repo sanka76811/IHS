@@ -1281,6 +1281,8 @@ img{
 }
 
 .main-slider .small-title{
+	margin-top: 250px !important;
+	background-color:rgba(0,0,0,0.5) !important;
 	line-height:1.3em;
 	color:#ffffff;
 	font-size:18px;
@@ -1290,6 +1292,8 @@ img{
 }
 
 .main-slider .big-title{
+	top: 138px !important;
+	background-color:rgba(0,0,0,0.5) !important;
 	font-weight:800;
 	line-height:1.2em;
 	color:#ffffff;
